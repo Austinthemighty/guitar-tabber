@@ -1,0 +1,84 @@
+/*Default styles for the web page*/
+body * {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: 1.2em;
+  list-style: none;
+  vertical-align: middle;
+}
+
+
+/*Styles for the horizontal nav list*/
+
+nav.horizontal ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgb(100, 100, 100);
+}
+
+nav.horizontal li {
+  float: left;
+}
+
+nav.horizontal li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav.horizontal a:hover {
+  background-color: orange;
+}
+
+
+/*Styles for the table element*/
+
+table {
+  margin: 4% 2% 4% 2%;
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 0px;
+}
+
+table tr {
+  height: 40px;
+  border: 2px solid black;
+}
+
+table tr th {
+  height: 40px;
+  font-size: 100%;
+  background-color: orange;
+}
+
+table td {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+th{
+  height: 100%;
+  margin: 0px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.col1 {
+  background-color: whitesmoke;
+}
+.col2 {
+  background-color: rgb(200, 200, 200);
+}
+
+
+/*Style for the cell inputs*/
+td input{
+  height: 100%;
+  width: 100%;
+}
