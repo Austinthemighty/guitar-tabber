@@ -14,9 +14,10 @@
         <header> <!-- Horizontal nav list -->
             <nav class="horizontal">
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://www.chordbuddy.com/guitar-learning-system-for-everyone/how-to-play-the-guitar-for-beginners/">Learning Guitar</a></li>
+                <li id="title">Guitar Tabber</li>
                 <li><a href="http://www.guitarcenter.com/">Purchase Your Own Guitar</a></li>
+                <li><a href="https://www.chordbuddy.com/guitar-learning-system-for-everyone/how-to-play-the-guitar-for-beginners/">Learning Guitar</a></li>
+                <li><a href="index.html">Home</a></li>
               </ul>
             </nav>
         </header>
@@ -24,6 +25,8 @@
 
         <section>
           <table>
+          <caption>Notes to Tableture</caption>
+
           <tr id="E"> <!-- E STRING -->
             <th>E</th>
             <td cellspacing="0"><input type="text" name="E" value="" readonly="true" class="col1"></td>
@@ -407,21 +410,54 @@
             <td cellspacing="0"><input type="text" name="e" value="" readonly="true" class="col1"></td>
             <td cellspacing="0"><input type="text" name="e" value="" readonly="true" class="col2"></td>
           </tr>
+
+          <tr id="buttons">
+            <td colspan="61">
+              <section> <!-- Buttons for beignning and ending the recording -->
+                <input type="button" name="startRec" value="&#9679 Record" onclick="record" class="button" id="record">
+                <input type="button" name="stopRec" value="&#9632 Stop" onclick="stopRec" class="button" id="stop">
+                <input type="button" name="clearFunct" value="Clear" onclick="clear" class="button" id="clear">
+              </section>
+            </td>
+          </tr>
         </table>
       </section>
 
-      <input type="button" name="recordFunct" value="Record" onclick="record">
-      <input type="button" name="clearFunct" value="Clear" onclick="clear">
+      <section id="info">
+        <header> Info </header>
+        <p>
+          Guitar Tabber is a website application that converts the notes you play on your guitar,
+          into the tableture that you can read and repeat. Now you can play a song and keep the tabs
+          so that you can play it again later. You could also hand out the tableture you create to
+          friends so they can read your music themselves.
+        <br>
+          Guitar Tabber works by recieving the audio that you play into a microphone or other recording
+          device, and converting the notes (measured in hertz) into a numerical amount. Those amounts
+          are then converted to digits in the designated tabs. Our program is original, one-of-a-kind,
+          and has the ability to expand to other instruments.
+        </p>
+      </section>
 
-      <p class="info">
-        Guitar Tabber is a website application  that converts the notes you play on your guitar,
-        into the tableture that you can read qand repeat. This is useful because now you can play
-        a soong and keep the tabs so that you can play it later without completely forgetting the song.
-        Or, you could hand out the tableture you create to friends so they can read your music themselves.
-        Guitar tabber works by recieving the audio that you play, converts the hertz into a numerical
-        amount, and use functions to turn the amounts into the digits in their designated tabs. Our
-        program is original and one-of-a-kind, and has the ability to expand to other instruments.
-      </p>
+      <section id="howTo">
+        <header>
+          Tips
+        </header>
+        <p id="tips">These are some simple guidelines and helpful tips to make your
+                     experience with Guitar Tabber even better.
+        </p>
+          <nav>
+            <ul>
+              <li>This program works best in fullscreen view</li>
+              <li>Make sure that your guitar is tuned before recording any audio</li>
+              <li>
+                This program is most accurate and efficient if
+                the audio is inputted using a microphone
+              </li>
+            </ul>
+          </nav>
+          <nav>
+        </p>
+      </section>
 
       </body>
     </html>

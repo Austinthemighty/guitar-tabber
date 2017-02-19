@@ -17,17 +17,31 @@ nav.horizontal ul {
   padding: 0px;
   overflow: hidden;
   background-color: rgb(100, 100, 100);
+
+}
+
+nav.horizontal #title {
+  float: left;
+  color: orange;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 15px;
+  border: 0px;
 }
 
 nav.horizontal li {
-  float: left;
+  float: right;
+  border-left: 2px solid whitesmoke;
+  font-weight: bold;
+  text-transform: none;
 }
 
 nav.horizontal li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px;
   text-decoration: none;
 }
 
@@ -39,10 +53,18 @@ nav.horizontal a:hover {
 /*Styles for the table element*/
 
 table {
-  margin: 4% 2% 4% 2%;
+  margin: 4% 0.8% 10px 0.8%;
   border: 2px solid black;
   border-collapse: collapse;
   padding: 0px;
+}
+
+table caption {
+  margin: 8px auto 15px auto;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: orange;
 }
 
 table tr {
@@ -54,9 +76,13 @@ table tr th {
   height: 40px;
   font-size: 100%;
   background-color: orange;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
 }
 
 table td {
+  width: 2.75em;
+  height:1.5em;
   border: 0px;
   padding: 0px;
   margin: 0px;
@@ -70,15 +96,116 @@ th{
 }
 
 .col1 {
-  background-color: whitesmoke;
+  background-color: rgb(240, 240, 240);
 }
 .col2 {
-  background-color: rgb(200, 200, 200);
+  /*background-color: rgb(200, 200, 200);*/
+  background-color: rgb(225, 225, 225);
 }
-
 
 /*Style for the cell inputs*/
 td input{
+  width: 2em;
   height: 100%;
   width: 100%;
+  border: 0px;
+  color: rgb(80, 80, 80);
+  font-weight: bold;
+}
+
+/*Styles for the function buttons*/
+table tr#buttons {
+  text-align: center;
+  border-color: transparent;
+}
+
+.button {
+  text-align: center;
+  width: 100px;
+  margin-left: 25px;
+}
+
+#record {
+  background-color: rgb(100, 100, 100);
+  color: red;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#stop {
+  background-color: rgb(100, 100, 100);
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#clear {
+  background-color: rgb(100, 100, 100);
+  color: orange;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*Styles for section elements*/
+
+section p {
+  line-height: 1.2em;
+  color: rgb(80, 80, 80);
+
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+
+  -webkit-column-rule: 2px solid orange;
+  -moz-column-rule: 2px solid orange;
+  column-rule: 2px solid orange;
+}
+
+section header {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: orange;
+}
+
+section#info {
+  float: left;
+  width: 550px;
+  height: 275px;
+  margin: 15px 2.5% 10px 8%;
+  padding: 10px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom: 2px solid orange;
+  background: linear-gradient(rgb(180, 180, 180) 2%, rgb(245, 245, 245));
+}
+
+section#howTo {
+  float: right;
+  width: 550px;
+  height: 275px;
+  margin: 15px 8% 10px 2.5%;
+  padding: 10px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom: 2px solid orange;
+  background: linear-gradient(rgb(180, 180, 180) 2%, rgb(245, 245, 245));
+}
+
+#howTo #tips {
+  column-count: 1;
+  text-align: center;
+}
+
+#howTo nav ul li {
+  margin: 5px;
+  padding: 5px;
+  list-style: square;
+  color: rgb(80, 80, 80);
 }
